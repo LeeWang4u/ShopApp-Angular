@@ -18,7 +18,7 @@ import { RegisterComponent } from './register/register.component';
     AppModule,
     ServerModule
   ],
-  bootstrap: [OrderConfirmComponent],
+  bootstrap: [DetailProductComponent],
 })
 export class AppServerModule {
   ngDoBootstrap() {
