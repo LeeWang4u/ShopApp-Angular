@@ -12,13 +12,16 @@ import { OrderComponent } from './order/order.component';
 import { LoginComponent } from './login/login.component';
 import { DetailProductComponent } from './detail-product/detail-product.component';
 import { RegisterComponent } from './register/register.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   imports: [
     AppModule,
-    ServerModule
+    ServerModule,
+    FormsModule
   ],
-  bootstrap: [DetailProductComponent],
+  bootstrap: [RegisterComponent],
 })
 export class AppServerModule {
   ngDoBootstrap() {
