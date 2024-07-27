@@ -13,6 +13,8 @@ import { DetailProductComponent } from './detail-product/detail-product.componen
 import { RegisterComponent } from './register/register.component';
 import { FormsModule } from '@angular/forms';
 
+import { provideHttpClient, withFetch } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -31,15 +33,17 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideHttpClient(withFetch())
   ],
   bootstrap: 
   [
     //HomeComponent,
     //OrderComponent
-    RegisterComponent  
+    // RegisterComponent  
     // OrderConfirmComponent
     //DetailProductComponent
+    LoginComponent
   ]
 })
 export class AppModule { }

@@ -21,7 +21,7 @@ import { FormsModule } from '@angular/forms';
     ServerModule,
     FormsModule
   ],
-  bootstrap: [RegisterComponent],
+  bootstrap: [LoginComponent],
 })
 export class AppServerModule {
   ngDoBootstrap() {
